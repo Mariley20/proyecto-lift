@@ -1,19 +1,18 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
     font-family: 'Raleway', sans-serif;
-    background-image: url('../img/portada.jpg');
-    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+#iniciaSesion {
+    background: url('../img/portada.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-.form-horizontal p, label{
-	color: #fff;
-}
-.div-btn {
-	display: flex;
 }

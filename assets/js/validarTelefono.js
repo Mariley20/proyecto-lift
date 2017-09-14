@@ -1,6 +1,7 @@
 /*Registrate*/
 let telInput = $("#phone");
 telInput.intlTelInput({
+  nationalMode: false,
   initialCountry: "auto",
   geoIpLookup: function (callback) {
     $.get('http://ipinfo.io', function () {}, "jsonp").always(function (resp) {
@@ -8,7 +9,6 @@ telInput.intlTelInput({
       callback(countryCode);
     });
   },
-  nationalMode: false,
   onlyCountries: ['pe', 'mx', 'cl'],
   placeholderNumberType: "MOBILE",
   preventInvalidDialCodes: true,

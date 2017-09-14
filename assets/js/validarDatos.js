@@ -3,8 +3,10 @@ $(document).ready(function () {
     let nombreApellidosValido = /^[A-Za-z]+$/;
     let btnValidoDatos = false;
     let btnValidoCorreo = false;
+    let nombreCompleto = $("#nombre").val()+$("#apellido").val()
     $("#correo").keydown(validarCorreo);
     $("#nombre, #apellido").keyup(validarNombreApellido);
+    localStorage.setItem($("#correo").val(), nombreCompleto);
     function validarCorreo(){
         //console.log(emailValido.test($(this).val()));
         if (emailValido.test($(this).val())) {
